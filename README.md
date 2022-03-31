@@ -68,7 +68,7 @@
    </generatorConfiguration>
    ```
    
-   - 关键字加 ```````，注意以下三点:
+   - 关键字加反引号 ``` ` ```，注意以下三点:
       ```xml
       <property name="beginningDelimiter" value="`"/>
       <property name="endingDelimiter" value="`"/>
