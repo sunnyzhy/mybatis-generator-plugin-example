@@ -3,6 +3,14 @@
 ## 前言
 由于 spring-boot:2.4.0 以上版本不兼容 maven-resources-plugin:3.2.0，所以示例中使用的是 spring-boot:2.3.6.RELEASE
 
+***重点：自定义插件必须添加在 \<plugin\> 的 \<dependency\>，而不是添加在 \<project\> 的 \<dependency\>***
+
+```
+The important thing is to 
+make sure that the project containing your MyBatis plugin is declared as a 
+dependency of the generator plugin - not just a dependency of the project
+```
+
 ## 使用方法
 1. 在工程里添加自定义的插件依赖
    ```xml
